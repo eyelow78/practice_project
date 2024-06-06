@@ -1,26 +1,29 @@
 @font-face {
 	font-family: 'DIN'; 
-	src: url(/fonts/dinpro.otf); 
+	src: url('/fonts/dinpro.otf'); 
 }
-
 .page{
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 .page__container{
     min-width: 1408px;
 }
 .header{
+    font-family: 'DIN', sans-serif;
     position: fixed;
-    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1408px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: #000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 .menu{
@@ -38,7 +41,6 @@
     list-style-type: none;
 }
 .menu__link{
-    font-family: "DIN";
     font-size: 14px;
     text-transform: uppercase;
     color: #000;
@@ -52,7 +54,6 @@
     padding-left: 25px;
 }
 .header__button{
-    font-family: "DIN";
     font-size: 14px;
     text-transform: uppercase;
     color: white;
