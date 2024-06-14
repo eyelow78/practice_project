@@ -8,40 +8,99 @@
 </head>
 <body class="page">
     <div class="page__container">
-    <header class="header">
-        <div class="header__logo">
-        <a href="#" class="header__logo-link">
-            <img class="header__logo-image" src="img/main-logo.svg" alt="THE GLASS HUTS">
-        </a>
-        </div>
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">The Hut</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">The Area</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Booking</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">About Us</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">FAQ</a>
-                </li>
-            </ul>
-            <div class="menu__language">
-                <img class="menu__language-selector" src="img/denmark.svg" alt="denmark">
+    <div class="header-container">
+        <header class="header">
+            <div class="header__logo">
+            <a href="#" class="header__logo-link margin-left">
+                <img class="header__logo-image" src="img/main-logo.svg" alt="THE GLASS HUTS">
+            </a>
             </div>
-        </nav>
-        <button class="header__button">Book Now</button>
-        <!-- https://www.youtube.com/watch?v=Jrjwewef_Ws&t=954s -->
-    </header>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">The Hut</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">The Area</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Booking</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About Us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <div class="menu__language">
+                    <img class="menu__language-selector menu__language-selector--padding-left" src="img/denmark.svg" alt="denmark">
+                </div>
+            </nav>
+            <a class="header__button-link main-button-link" href="#">
+                <button class="header__button main-button margin-right">Book Now</button>
+            </a>
+        </header>
+    </div>
+
+    <main class="main">
+
+
+        <div class="slider">
+            <div class="slider__inner">
+                <div class="slider__content-container">
+                    <img class="slider__image" src="img\slider-image01.jpg" alt="01">
+                    <div class="slider__content margin-right">
+                        <h1 class="slider__title">Find peace in the Forest</h1>
+                        <p class="slider__text">Come and stay in out hut hotel near Mariager Fjord in Denmark</p>
+                    </div>
+                </div>
+                <div class="slider__indicator-container">
+                    <div class="slider__indicator"></div>
+                    <div class="slider__indicator"></div>
+                    <div class="slider__indicator"></div>
+                    <div class="slider__indicator slider__indicator--active"></div>
+                    <div class="slider__indicator"></div>
+                    <div class="slider__indicator"></div>
+                    <div class="slider__indicator"></div>
+                </div>
+                <div class="slider__button-container main-button-container">
+                    <a class="slider__button-link main-button-link" href="#">
+                        <button class="slider__button main-button">Book now</button>
+                        <div class="slider__button-info main-button__info">
+                            <p class="slider__button-info main-button__info-text main-button__info-text--left">from</p>
+                            <p class="slider__button-info main-button__info-text main-button__info-text--bold">€3.200</p>
+                            <p class="slider__button-info main-button__info-text main-button__info-text--right">per night</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slider__buttons-indicators-container">
+                    <div class="slider__arrows-buttons">
+                        <button class="slider__arrow-button">
+                            <img class="slider__arrow slider__arrow--left" src="img\slider__arrow.svg" alt="1">
+                        </button>
+                        <button class="slider__arrow-button slider__arrow-button--right">
+                            <img class="slider__arrow slider__arrow--right" src="img\slider__arrow.svg" alt="2">
+                        </button>
+                    </div>
+                    <div class="slider__indicator-container slider__indicator-container--horizontally">
+                        <div class="slider__indicator slider__indicator--horizontally slider__indicator--active"></div>
+                        <div class="slider__indicator slider__indicator--horizontally"></div>
+                        <div class="slider__indicator slider__indicator--horizontally"></div>
+                        <div class="slider__indicator slider__indicator--horizontally"></div>
+                        <div class="slider__indicator slider__indicator--horizontally"></div>
+                        <div class="slider__indicator slider__indicator--horizontally"></div>
+                        <div class="slider__indicator slider__indicator--horizontally"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
     </div>
 </body>
 </html>
