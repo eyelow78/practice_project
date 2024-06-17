@@ -435,13 +435,6 @@
     width: 144px;
     text-align: center;
 }
-
-
-
-
-
-
-
 .about-us{
     max-height: 559px;
     width: 100%;
@@ -535,6 +528,10 @@
 .stay__button-container{
     display: flex;
     flex-direction: column;
+}
+.stay__text{
+    width: fit-content;
+    text-decoration: none;
 }
 .footer{
     display: flex;
