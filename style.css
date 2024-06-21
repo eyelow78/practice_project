@@ -33,7 +33,6 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 5;
-
 }
 .margin-left{
     margin-left: 150px;
@@ -87,9 +86,6 @@
     width: 100%;
     max-width: 1408px;
 }
-.slider{
-    max-height: 700px;
-}
 .slider__inner{
     position: relative;
     background-color: rgb(54, 54, 54)
@@ -113,7 +109,7 @@
     align-items: flex-end;
 }
 .slider__title{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 70px;
     font-weight: 300;
@@ -121,7 +117,7 @@
     margin: 0;
 }
 .slider__text{
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     color: white;
     font-size: 20px;
     font-weight: 400;
@@ -176,7 +172,7 @@
     color: #000;
     width: 60px;
     font-size: 12px; 
-    font-family: 'DIN'; 
+    font-family: 'DIN', sans-serif;; 
     font-weight: 300; 
     line-height: 18px;
     margin: 0;
@@ -250,12 +246,12 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
-    width: 465px;
+    max-width: 465px;
     margin-right: 40px;
 }
 .text-description{
     color: #5B6460;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     text-align: left;
 }
 .text-description--italic{
@@ -271,7 +267,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    width: 465px;
 }
 .link-description{
     font-weight: 600; 
@@ -393,18 +388,17 @@
     text-align: center; 
     color: #333333; 
     font-size: 12px; 
-    font-family: 'DIN'; 
+    font-family: 'DIN', sans-serif;; 
     font-weight: 300; 
     text-transform: uppercase;
 }
 .facilities{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    min-height: 850px;
     background-color: rgba(91, 100, 96, 1);
     color: white;
 }
@@ -414,12 +408,12 @@
     line-height: 40px;
     text-align: center;
     margin-bottom: 100px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .facilities__main-container{
     width: 850px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 80px;
     margin-bottom: 100px;
 }
@@ -443,19 +437,22 @@
     display: flex;
 }
 .about-us__image-cont{
+    
     width: 50%;
 }
 .about-us__image-cont--first{
-    left: 0;
-}
-.about-us__image-cont--second{
-    right: 0;
+    position: relative;
 }
 .about-us__image--first{
-    width: 119.2%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
 .about-us__image--second{
+    position: relative;
     width: 100%;
+    height: 100%;
 }
 .about-us__button{
     display: flex;
@@ -481,14 +478,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    min-height: 500px;
     max-width: 1408px;
 }
 .stay__inner{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 1100px;
+    max-width: 1100px;
+    width: 80%;
 }
 .stay__text-title{
     margin-bottom: 50px;
@@ -537,13 +535,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 400px;
     max-width: 1408px;
     width: 100%;
     background: #5B6460;
 }
 .footer-text{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 16px;
     font-weight: 300;
@@ -565,15 +563,17 @@
     display: flex;
     justify-content: space-between;
     min-height: 280px;
-    width: 1100px;
+    max-width: 1100px;
+    width: 80%;
 }
 .footer__form-container{
+    width: 37%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 420px;
 }
 .footer__input{
+    width: 100%;
     background: none;
     color: white;
     border: none;
@@ -587,9 +587,9 @@
 }
 .footer__input{
     padding: 0;
-    width: 370px;
 }
 .footer__form{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
