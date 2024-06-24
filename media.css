@@ -148,3 +148,152 @@
         width: 180px;
     }
 }
+
+@media (max-width: 768px){
+    .burger{
+        display: block;
+    }
+    .header-container{
+        height: 60px;
+    }
+    .header{
+        height: 60px;
+    }
+    .header__logo-image{
+        width: 50%;
+    }
+    .menu__list{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        transform: translatex(-200%);
+        transition: .4s ease;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        opacity: 0;
+    }
+    .menu__language-selector{
+        display: none;
+    }
+    .menu__language-selector--nav{
+        display: block;
+    }
+    .burger-checkbox:checked ~ .menu__list {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .slider__indicator-container--vertically{
+        display: none;
+    }
+    .slider__buttons-indicators-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .slider__indicator-container--horizontally{
+        width: 40%;
+    }
+    .slider__arrow{
+        width: 75%;
+    }
+    .slider__content{
+        top: 0vw;
+    }
+    .slider__title{
+        font-size: 8vw;
+    }
+    .slider__text{
+        font-size: 2.5vw;
+    }
+    .slider__arrows-buttons{
+        display: none;
+    }
+    .main-button{
+        width: 150px;
+    }
+    .slider__button{
+        height: 50px;
+        font-size: 14px;
+    }
+    .slider__button-info{
+        font-size: 14px;
+    }
+    .cabins__inner{
+        margin-top: 100px;
+    }
+    .description-title{
+        font-size: 24px;
+    }
+    .description-text{
+        font-size: 14px;
+    }
+    .cabins__description{
+        max-width: none;
+    }
+    .cabins__main-image-container{
+        width: 90%;
+    }
+    .cabins__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabins__main{
+        margin-bottom: 20px;
+    }
+    .cabins__images-container{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .cabins__image{
+        width: 40%;
+    }
+    .cabins__images-container{
+        margin-bottom: 50px;
+    }
+    .main-description{
+        width: 90%;
+        max-width: none;
+    }
+    .facilities__main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .facilities__title-text{
+        font-size: 30px;
+    }
+    .about-us__button{
+        width: 100px;
+        height: 100px;
+        left: calc(50% - 100px / 2);
+        top: calc(50% - 100px / 2);
+    }
+    .round-button-text{
+        font-size: 12px;
+    }
+    .stay__inner{
+        width: auto;
+    }
+    .stay__image{
+        width: 360px;
+    }
+    .stay__button{
+        width: 260px;
+        font-size: 14px;
+    }
+    .stay__button-info{
+        width: 100px;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    .footer__payment-methods{
+        width: 100%;
+    }
+}
+
