@@ -19,8 +19,15 @@
     flex-direction: column;
     align-items: center;
 }
+.page__container-booking{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .header-container{
     height: 100px;
+    width: 100vw;
 }
 .header-inner{
     display: flex;
@@ -777,4 +784,56 @@
   bottom: 11px;
   transform: rotate(-45deg);
   transition: bottom .3s, transform .3s .15s;
+}
+.booking__form{
+    outline: 1px solid black;
+    font-family: 'DIN', sans-serif;
+}
+.booking__form-main-container{
+    display: flex;
+    justify-content: center;
+}
+.booking__form-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.booking__form-section label{
+    margin-bottom: 5px;
+}
+.booking__submit-button{
+    height: auto;
+    font-size: 16px;
+}
+.booking__check-out-input::before{
+    content: '';
+    height: 100%;
+    background: black;
+}
+
+.guest-counter {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#decrement, #increment {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#decrement:disabled, #increment:disabled {
+  cursor: default;
+  color: #ccc;
+}
+
+#guestCount {
+  width: 40px;
+  text-align: center;
+  display: inline-block;
 }

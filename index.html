@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="media.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Glass Huts</title>
 </head>
 <body class="page">
     <div class="page__container">
@@ -15,7 +15,7 @@
             <div class="header-inner">
                 <header class="header">
                     <div class="header__logo">
-                        <a href="#" class="header__logo-link margin-left">
+                        <a href="index.html" class="header__logo-link margin-left">
                             <img class="header__logo-image" src="img/main-logo.svg" alt="THE GLASS HUTS">
                         </a>
                     </div>
@@ -49,7 +49,7 @@
                             <img class="menu__language-selector menu__language-selector--padding-left" src="img/denmark.svg" alt="denmark">
                         </div>
                     </nav>
-                    <button class="header__button main-button margin-right">Book Now</button>
+                    <button onclick="window.location.href = '/booking.html'" class="header__button main-button margin-right">Book Now</button>
                 </header>
             </div>
         </div>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="slider__button-container main-button-container">
                     <div class="slider__button-link main-button-link">
-                        <button class="slider__button main-button">Book now</button>
+                        <button onclick="window.location.href = '/booking.html'" class="slider__button main-button">Book now</button>
                         <div class="slider__button-info main-button__info">
                             <p class="slider__button-info-text main-button__info-text main-button__info-text--left">from</p>
                             <p class="slider__button-info-text main-button__info-text main-button__info-text--bold">€3.200</p>
@@ -209,7 +209,7 @@
                     <div data-aos="fade-up" class="stay__button-container">
                         <img class="stay__image" src="img/stay.png" alt="stay">
                         <div class="main-button-container">
-                            <button class="stay__button main-button">Book a hut</button>
+                            <button onclick="window.location.href = '/booking.html'" class="stay__button main-button">Book a hut</button>
                             <div class="stay__button-info main-button__info">
                                 <p class="main-button__info-text main-button__info-text--left">from</p>
                                 <p class="main-button__info-text main-button__info-text--bold">€3.200</p>
@@ -220,14 +220,15 @@
                 </div>
             </section>
         </main>
-        <footer data-aos="fade-up" class="footer">
+        <footer data-aos="fade-up" class="footer" id="footer">
             <div class="footer__inner">
                 <div class="footer__form-container">
                     <p class="footer-text footer__title footer-text--bold">Newsletter</p>
-                    <form class="footer__form" method="get" action="#">
-                        <input class="footer__input footer-text footer-text--italic" placeholder="Email Adrdess" type="email">
+                    <form class="footer__form" method="post" id="newsletterForm">
+                        <input class="footer__input footer-text footer-text--italic" name="email" placeholder="Email Adrdess" type="email">
                         <input class="footer__submit-button" type="submit" value="">
                     </form>
+                    <script src="scripts/js/newsletter-script.js"></script>
                     <p class="footer-text footer__text footer-text--dim">Sign up to our newsletter for special things and receive 10% off your next order.</p>
                     <p class="footer-text footer__text footer-text--low footer-text--dim">© 2025 The Glass Huts</p>
                 </div>
@@ -246,43 +247,13 @@
                 </div>
             </div>
         </footer>
+        
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/js/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="scripts/aos.js"></script>
-    <script type="module">
-
-        const cabins = new Swiper('.cabins__slider', {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".cabins__pagination",
-            clickable: true,
-        },
-
-        })
-
-        const mainSlider = new Swiper('.slider__inner', {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        loop: 'true',
-        pagination: {
-            el: ".slider__pagination",
-            type: "progressbar"
-        },
-        navigation: {
-            nextEl: '.slider__button-next',
-            prevEl: '.slider__button-prev',
-        }
-
-        })
-        
-    </script>
-
+    <script type="module" src="scripts/js/main-sliders.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

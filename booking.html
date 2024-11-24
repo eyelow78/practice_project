@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="page">
+    <div class="page__container page__container-booking">
+        <div class="header-container">
+            <div class="header-inner">
+                <header class="header">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link margin-left">
+                            <img class="header__logo-image" src="img/main-logo.svg" alt="THE GLASS HUTS">
+                        </a>
+                    </div>
+                    <nav class="header__menu menu">
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label class="burger" for="burger-checkbox"></label>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">The Hut</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">The Area</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Booking</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">About Us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">FAQ</a>
+                            </li>
+                            <li class="menu__item">
+                                <img class="menu__language-selector--nav" src="img/denmark.svg" alt="denmark">
+                            </li>
+                        </ul>
+                        <div class="menu__language">
+                            <img class="menu__language-selector menu__language-selector--padding-left" src="img/denmark.svg" alt="denmark">
+                        </div>
+                    </nav>
+                    <button onclick="window.location.href = '/booking.html'" class="header__button main-button margin-right">Book Now</button>
+                </header>
+            </div>
+        </div>
+
+        <section class="booking__form-container">
+            <form class="booking__form" id="bookingForm" method="post">
+                <div class="booking__form-main-container">
+                    <div class="booking__form-section">
+                        <label for="checkIn">Check In</label>
+                        <input class="booking__check-in-input" id="calendar" name="checkIn" type="text">
+                    </div>
+                    <div class="booking__form-section">
+                        <label for="checkOut">Check Out</label>
+                        <input class="booking__check-out-input" id="calendar" name="checkOut" type="text">
+                    </div>
+                    <div class="booking__form-section">
+                        <label>Guests</label>
+                        <div class="guest-counter">
+                            <button id="decrement" type="button" disabled>-</button>
+                            <span id="guestCount">1</span>
+                            <button id="increment" type="button">+</button>
+                        </div>
+                        <!-- <label for="numberOfPersons">Guests</label> -->
+                        <input class="booking__number-of-persons-input"  name="numberOfPersons" type="hidden" value="">
+                        <script src="scripts/js/booking-guests.js"></script>
+                    </div>
+                    <input class="main-button booking__submit-button" value="BOOK" type="submit">
+                </div>
+            </form>
+            <script type="module" src="scripts/js/booking-script.js"></script>
+            <script src="scripts/js/flatpickr.js"></script>
+        </section>
+
+        <footer id="footer" data-aos="fade-up" class="footer">
+            <div class="footer__inner">
+                <div class="footer__form-container">
+                    <p class="footer-text footer__title footer-text--bold">Newsletter</p>
+                    <form class="footer__form" method="post" id="newsletterForm">
+                        <input class="footer__input footer-text footer-text--italic" name="email" placeholder="Email Adrdess" type="email">
+                        <input class="footer__submit-button" type="submit" value="">
+                    </form>
+                    <script src="scripts/js/newsletter-script.js"></script>
+                    <p class="footer-text footer__text footer-text--dim">Sign up to our newsletter for special things and receive 10% off your next order.</p>
+                    <p class="footer-text footer__text footer-text--low footer-text--dim">© 2025 The Glass Huts</p>
+                </div>
+                <div class="footer__links-container">
+                    <div class="footer__main-links">
+                        <a class="footer__links" href="#"><p class="footer-text footer-text--low footer__text footer-text--dim">TERMS AND CONDITIONS</p></a>
+                        <a class="footer__links" href="#"><p class="footer-text footer-text--low footer__text footer-text--dim">CENCELLATION POLICY</p></a>
+                        <a class="footer__links" href="#"><p class="footer-text footer-text--low footer__text footer-text--dim">PRIVACY POLICY</p></a>
+                    </div>
+                    <div class="footer__payment-methods">
+                        <img src="img/paypal-logo.svg" alt="paypal">
+                        <img src="img/mastercard-logo.svg" alt="mastercard">
+                        <img src="img/visa-logo.svg" alt="visa">
+                        <img src="img/bank-logo.svg" alt="bank">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
